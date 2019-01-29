@@ -27,9 +27,14 @@ $ git checkout -b <branch> origin/<branch>
 // Now we have all branches locally.
 
 // Make sure all local branches are up-to-date. You can checkout to the branches one by one and pull.
-// Or if you have "tig" installed, you can do the following:
-$ tig --all
-// It will show all the local and remote branches. Checkout to the ones that have local fell behind and pull.
+$ for branch in `git branch`
+$ do
+$   if [ "$branch" != "*" ]
+$   then
+$       git checkout $branch
+$       git pull
+$   fi
+$ done
 
 // Add the new remote
 $ git remote rename origin bitbucket
