@@ -3,11 +3,11 @@
 
 Basically, what we should do is:
 1. Run Jupyter notebook on the remote machine on a specific port.
-```
+```Bash
 remote_user@remote_host$ jupyter notebook --no-browser --port=8889
 ```
 2. ssh to remote machine and fo port forwarding.
-```
+```Bash
 local_user@local_host$ ssh -N -L localhost:<local-port>:localhost:<remote-port> remote_user@remote_host
 ```
     - A typical choice for `<local-port>` and `<remote-port>` is 8888 or 8889.
