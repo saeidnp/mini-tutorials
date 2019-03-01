@@ -11,9 +11,14 @@ This repo contains a brief walkthrough of various useful tools I learned at some
 - Git
     - [git-merge]: How to safely merge git branches.
     - [git-transfer-repo]: Transferring an existing repo to a different version control hosting websites.
+    - [git-cheatsheet]: Cheatsheet for Git.
+- PyTorch
+    - [pytorch-cheatsheet]: Some useful PyTorch tricks and code snippets.
 
 [Jupyter-notebook-remote]: jupyter-notebook-remote.md
 [python-multiprocessing]: python-multiprocessing.ipynb
 [python-profiler]: python-profiler/python-profiler.md
-[git-merge]: Git/merge.md
-[git-transfer-repo]: Git/transfer-repo.md
+[git-merge]: git/merge.md
+[git-transfer-repo]: git/transfer-repo.md
+[git-cheatsheet]: git/cheatsheet.md
+[pytorch-cheatsheet]: pytorch/cheatsheet.md
