@@ -34,3 +34,10 @@ We can also delete a remote branch and create a new one in one command:
 ```
 $ git push origin :<old-branch> <new-branch>
 ```
+
+# Miscellaneous
+## Stop tracking a certain file
+It is particularly useful for machine-specific files (like some of config files):
+```
+$ git update-index --assume-unchanged <path>
+```
